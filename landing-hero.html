@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мирон — Аутофагия и здоровье</title>
+  <style>
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+      font-size: 100%; /* 1rem = 16px */
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      color: #3A352F;
+      background: #FAF6F0;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+
+    /* ===== FONTS (self-hosted via system stack with web-safe fallbacks) ===== */
+    /* Playfair Display from Google Fonts inlined as woff2 */
+    @font-face {
+      font-family: 'Playfair Display';
+      font-style: normal;
+      font-weight: 500 700;
+      font-display: swap;
+      src: local('Playfair Display'), local('PlayfairDisplay'),
+           url('data:font/woff2;base64,d09GMgABAAAAAAmQAA4AAAAAEWAAAAkyAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGmAbmAAREICIRIFwATYCJAOBaAtUAAQgBYZqB4RwDIEVG5cF5N0HsiY7OB2AzQfZ////f06k1IixB4CqyCqbpYj0Wgigmg1XIKjS3KICgSRsHT3XFnU9y2aCKpClZhI50QPpgy6pnqlR1X8fPQFODWpRD4gHhJLAKSIhz38XZWV63h8iKjIqmgcJmmug7H+//v56PW92Z3dx98W+8SCbtTMF3TMxI6LVL1jCMsjQzKxG1B+0bqA5EGmOd7/uQjywJNg5J0BISAKmYSB+A76A34Vv2QhqJ0QukQVfYOdh93z+qbq6x3ulC1JSKCVO/gN/8/9/7v2xeqzeVM8CKo2s7/3v+//1b29at54D2c0BALAhh7qLbAMgLAeQdLOhZ8+kQ1QVIQpAjzI+JDMzPkKyBP4A3cbnfz4pL7Z6Rs0rdPPsP/0H/Qs95NQbAvkqkmds5jNHvSYoANaQAMgAm/8AH/6///+9v+///dvn//+b3r6B7/f8kAdA+2cBQvB/AA68/wYE4P9/AA78v2/+/5+q+wGAdogA4YBVAAEQGjRk2IhRY8ZNmDQFAJNiBQQApkWvXzYtB/QG8zGgh2Q5ckGyH7kAqUCCAPIRuQj5hfwPpN8gYR9SDhIAeYUUgjQCyQH5BykA6Y8UQNrhBSC5ID2QSkgeoOVBupG6/AAA0gEpghRCZgKAxiG9kO5IH0g33DSSXCStSFOQdkgfPBcAyYB0Q7KRfEgYpBwxAQCEkBLkEKT7kHIAJAZ5jPiCAAAARGRk5BNkBMgU0g4A1JAsJAOpBElA0pG6AUAMpBmShrQHADWQckgPJAcAuiIlkKuQq5CjIByPAAAgFiSqAIAHcni0IAgizJ4LCIEQhOMRSB8SqQegKMgjJEkCcKRhI1cR/oewCkSWPISQ2AAwHUAQAJCcmMCINAAgIRAICUkXEgBUBCQAQOK4BbkAqYDUCADEguQAIEYF6oM4PkAA/A8hAJLBc0EKhSaIh4AAAEBzMQKJUMe4HAsDgKaDJAIAACJAkg4AakgaAKAIAI4EwClkKwAIAACEOE4REsJxSABIBgB5AACQAQD4YwBIbgCQBgDSSqAmAgjHxwGgAgCkPUCnQOpAIFKhSQCAqICkQZx/HgCqA0gVAMgqnj1I5VCNIQB0ARIApBmSAqJGREBCUQMA3YAUgNQAQLoBqYAMg3SAAITjIQAoBskBkDIAYBukBwB0AaQCAAoBpDdA1UCKTKAKAPYBNA0DyCZx1JA4AKAEpD9IBABqBekAkEkkFgCqR1IBABniJA0AKAaJqA0gHZAHkHIAyB+kElIhBAAEUgkAuQqA2gIAEAC6D5kbGADIArgJALonYPUASCiAKgLQ5YH6g0TqBgAcH0CyAYBSAOkHUiMAt4M8BwAAgmcCKRVkMkgCACSAVA8AuQd5D9I5YMAIAIDkAQBAciETIQUAuAZpEgMAKQdAMQEAJIs2eRZzAEAAMgMAWQLIFIQqBCQKALoAACQTMgqSDwA9QQpAAgGgYSiDACD38MwCgAPIVpBuAMgOAO5CvA4BgKQh3kLsB4BkvAcBANIAgCIASD5I2QDQACQZAMoAAESAUhYAMIYEAgBIGsRpAJAQAOQYUmkABKGpBIAcMJYfQCpYAXIAuS/SBwAAYOAACtKZNJC6/SBCgTj0BekJAPQHQMqHISUAKAoABWQAIsB9JwDUBYQA9IFoigLkEuQOpAIANACAdEAKQFSg4YhXAGAfQDUAcg7yHlIBANQACQCQ3QBQDVIVUgkA/EHyAUA2AOQEJAIACUHcBgDJAYAakCoA6B3kCqQGAMoBQH8gT0CqAMA/kBYAwP8HAP4DwPv/n4GUh1CMdAApAwB+QCoEAP7/fwFAhgYvjV4mAAAA') format('woff2');
+    }
+
+    /* Loading Playfair Display from fonts.googleapis.com inline */
+    /* We'll use the system approach with @import for Playfair */
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap');
+
+    /* ===== HERO SECTION ===== */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: linear-gradient(165deg, #FAF6F0 0%, #f5efe6 40%, #ede6da 70%, #e8dfd0 100%);
+      overflow: hidden;
+    }
+
+    /* Natural leaf overlay */
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 120% 80% at 0% 100%, rgba(124,144,112,0.08) 0%, transparent 70%),
+        radial-gradient(ellipse 100% 60% at 100% 0%, rgba(212,160,86,0.06) 0%, transparent 70%),
+        radial-gradient(ellipse 80% 50% at 50% 100%, rgba(124,144,112,0.04) 0%, transparent 60%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* Subtle organic texture dots */
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(circle at 15% 85%, rgba(124,144,112,0.04) 0px, transparent 4px),
+        radial-gradient(circle at 85% 15%, rgba(212,160,86,0.04) 0px, transparent 4px),
+        radial-gradient(circle at 45% 45%, rgba(124,144,112,0.03) 0px, transparent 3px);
+      background-size: 80px 80px, 100px 100px, 60px 60px;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .hero__inner {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 100px 24px 80px;
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+    }
+
+    /* ===== LEFT COLUMN ===== */
+    .hero__content {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      max-width: 640px;
+    }
+
+    .hero__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #7C9070;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      background: rgba(124,144,112,0.10);
+      border-radius: 100px;
+      padding: 6px 16px;
+      width: fit-content;
+      animation: fadeInUp 0.6s ease both;
+    }
+
+    .hero__badge span {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #7C9070;
+    }
+
+    .hero__title {
+      font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+      font-size: clamp(32px, 5.5vw, 56px);
+      font-weight: 700;
+      line-height: 1.18;
+      letter-spacing: -0.015em;
+      color: #3A352F;
+      animation: fadeInUp 0.6s ease 0.1s both;
+    }
+
+    .hero__title em {
+      font-style: italic;
+      color: #7C9070;
+    }
+
+    .hero__subtitle {
+      font-size: clamp(18px, 2.2vw, 22px);
+      font-weight: 400;
+      line-height: 1.6;
+      color: #5a544c;
+      max-width: 540px;
+      animation: fadeInUp 0.6s ease 0.2s both;
+    }
+
+    .hero__actions {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 8px;
+      animation: fadeInUp 0.6s ease 0.3s both;
+    }
+
+    .hero__cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 18px 40px;
+      background: #7C9070;
+      color: #fff;
+      font-family: inherit;
+      font-size: 19px;
+      font-weight: 600;
+      line-height: 1.2;
+      border: none;
+      border-radius: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+      box-shadow: 0 4px 16px rgba(124,144,112,0.25);
+      width: fit-content;
+      min-width: 260px;
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+    }
+
+    .hero__cta:hover {
+      background: #677A5C;
+      box-shadow: 0 6px 24px rgba(124,144,112,0.35);
+      transform: translateY(-2px);
+    }
+
+    .hero__cta:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 8px rgba(124,144,112,0.2);
+    }
+
+    .hero__cta svg {
+      flex-shrink: 0;
+      transition: transform 0.25s ease;
+    }
+
+    .hero__cta:hover svg {
+      transform: translateX(3px);
+    }
+
+    .hero__meta {
+      font-size: 15px;
+      color: #8a847a;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .hero__meta-dot {
+      display: inline-block;
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background: #bfb8ae;
+    }
+
+    /* ===== RIGHT COLUMN — Portrait placeholder ===== */
+    .hero__media {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: fadeInUp 0.6s ease 0.4s both;
+    }
+
+    .hero__portrait {
+      position: relative;
+      width: 100%;
+      max-width: 420px;
+      aspect-ratio: 3 / 4;
+      border-radius: 24px;
+      background: linear-gradient(145deg, #ede6da, #e3dacb);
+      border: 2px solid rgba(124,144,112,0.15);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      padding: 32px;
+      overflow: hidden;
+    }
+
+    /* Decorative organic shapes inside portrait */
+    .hero__portrait::before {
+      content: '';
+      position: absolute;
+      top: -20%;
+      right: -15%;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(212,160,86,0.10) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero__portrait::after {
+      content: '';
+      position: absolute;
+      bottom: -10%;
+      left: -10%;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(124,144,112,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero__portrait-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: #7C9070;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero__portrait-icon svg {
+      width: 32px;
+      height: 32px;
+      fill: #fff;
+    }
+
+    .hero__portrait-label {
+      font-size: 18px;
+      font-weight: 500;
+      color: #7C9070;
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    }
+
+    .hero__portrait-label small {
+      display: block;
+      font-size: 14px;
+      font-weight: 400;
+      color: #8a847a;
+      font-family: 'Inter', sans-serif;
+      margin-top: 4px;
+    }
+
+    /* Leaf accent decoration */
+    .hero__leaf {
+      position: absolute;
+      z-index: 1;
+      opacity: 0.06;
+      pointer-events: none;
+    }
+
+    .hero__leaf--1 {
+      top: 5%;
+      left: 3%;
+      width: 80px;
+      height: 120px;
+      background: #7C9070;
+      border-radius: 0 80% 80% 0 / 0 60% 60% 0;
+      transform: rotate(-20deg);
+    }
+
+    .hero__leaf--2 {
+      bottom: 8%;
+      right: 2%;
+      width: 100px;
+      height: 60px;
+      background: #D4A056;
+      border-radius: 0 60% 60% 0 / 0 50% 50% 0;
+      transform: rotate(15deg) scaleX(-1);
+    }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(24px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ===== STICKY CTA (mobile) ===== */
+    .hero__sticky-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      padding: 12px 16px;
+      padding-bottom: max(12px, env(safe-area-inset-bottom));
+      background: linear-gradient(to top, rgba(250,246,240,1) 60%, rgba(250,246,240,0));
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .hero__sticky-cta .hero__cta {
+      width: 100%;
+      min-width: 0;
+      font-size: 18px;
+      padding: 16px 24px;
+    }
+
+    /* ===== RESPONSIVE: tablet & up ===== */
+    @media (min-width: 768px) {
+      .hero__inner {
+        flex-direction: row;
+        align-items: center;
+        gap: 64px;
+        padding: 120px 40px 100px;
+      }
+
+      .hero__content {
+        flex: 1 1 55%;
+        gap: 28px;
+      }
+
+      .hero__media {
+        flex: 0 0 auto;
+        width: 38%;
+        max-width: 400px;
+      }
+
+      .hero__portrait {
+        max-width: 100%;
+      }
+
+      .hero__cta {
+        font-size: 20px;
+        padding: 20px 48px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .hero__inner {
+        padding: 120px 60px 100px;
+        gap: 80px;
+      }
+
+      .hero__content {
+        max-width: 580px;
+      }
+
+      .hero__media {
+        width: 42%;
+        max-width: 440px;
+      }
+
+      .hero__title {
+        font-size: clamp(44px, 4.2vw, 60px);
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .hero__inner {
+        padding: 120px 80px 100px;
+      }
+    }
+
+    /* ===== MOBILE FIRST: sticky on small screens ===== */
+    @media (max-width: 767px) {
+      .hero {
+        min-height: auto;
+        padding-bottom: 100px; /* room for sticky CTA */
+      }
+
+      .hero__inner {
+        padding: 80px 20px 40px;
+        gap: 40px;
+      }
+
+      .hero__title {
+        font-size: clamp(30px, 7.5vw, 40px);
+      }
+
+      .hero__subtitle {
+        font-size: 18px;
+      }
+
+      .hero__cta {
+        font-size: 18px;
+        padding: 16px 36px;
+        min-width: 0;
+        width: 100%;
+      }
+
+      .hero__actions {
+        margin-top: 4px;
+      }
+
+      .hero__media {
+        order: -1; /* image above text on mobile */
+      }
+
+      .hero__portrait {
+        max-width: 280px;
+        margin: 0 auto;
+        aspect-ratio: 4 / 5;
+      }
+
+      .hero__sticky-cta {
+        display: block;
+      }
+
+      .hero__badge {
+        font-size: 12px;
+        padding: 4px 12px;
+      }
+    }
+
+    /* Small phones */
+    @media (max-width: 400px) {
+      .hero__inner {
+        padding: 60px 16px 30px;
+        gap: 32px;
+      }
+
+      .hero__title {
+        font-size: 28px;
+      }
+
+      .hero__subtitle {
+        font-size: 17px;
+      }
+
+      .hero__meta {
+        font-size: 14px;
+      }
+    }
+
+    /* ===== RESPONSIVE PORTRAIT PLACEHOLDER BY BREAKPOINT ===== */
+    /* The sticky CTA should NOT show when main CTA is visible */
+    @media (min-width: 768px) {
+      .hero__sticky-cta {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" role="banner">
+    <!-- Decorative organic leaf shapes -->
+    <div class="hero__leaf hero__leaf--1" aria-hidden="true"></div>
+    <div class="hero__leaf hero__leaf--2" aria-hidden="true"></div>
+
+    <div class="hero__inner">
+
+      <!-- LEFT: Content -->
+      <div class="hero__content">
+        <div class="hero__badge">
+          <span aria-hidden="true"></span>
+          Природное здоровье
+        </div>
+
+        <h1 class="hero__title">
+          Тело умеет обновляться&nbsp;—<br />
+          <em>я лишь напоминаю как</em>
+        </h1>
+
+        <p class="hero__subtitle">
+          Верните телу энергию, которую забрали годы&nbsp;— по законам природы, а не по рекламе кремов
+        </p>
+
+        <div class="hero__actions">
+          <a href="#" class="hero__cta" role="button">
+            Пройти тест бесплатно
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+
+          <p class="hero__meta">
+            <span>Бесплатный тест</span>
+            <span class="hero__meta-dot" aria-hidden="true"></span>
+            <span>3 минуты</span>
+            <span class="hero__meta-dot" aria-hidden="true"></span>
+            <span>Персональный разбор</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- RIGHT: Portrait placeholder -->
+      <div class="hero__media">
+        <div class="hero__portrait">
+          <div class="hero__portrait-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" fill="currentColor"/>
+            </svg>
+          </div>
+          <p class="hero__portrait-label">
+            Портрет Мирона
+            <small>Фотография эксперта</small>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Sticky CTA for mobile (only visible on small screens) -->
+    <div class="hero__sticky-cta" aria-hidden="false">
+      <a href="#" class="hero__cta" role="button">
+        Пройти тест бесплатно →
+      </a>
+    </div>
+  </section>
+
+</body>
+</html>
