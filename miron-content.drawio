@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-07-11T14:27:00.000Z" agent="Mozilla/5.0" version="24.7.5" etag="miron-content">
+  <diagram id="miron-content" name="Контент-стратегия">
+    <mxGraphModel dx="1200" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="📣 Контент-стратегия Мирон — что куда постить" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=22;fontFamily=Playfair Display;fontColor=#3A352F;" vertex="1" parent="1">
+          <mxGeometry x="200" y="20" width="1000" height="36" as="geometry" />
+        </mxCell>
+
+        <!-- 5 Content Pillars -->
+        <mxCell id="pillars_title" value="🎯 5 КОНТЕНТ-СТОЛПОВ" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=15;fontColor=#7C9070;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="50" y="80" width="400" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p1" value="📖 Просвещение (40%)&#10;аутофагия, Нобелевка 2016,&#10;клеточное обновление" style="rounded=1;html=1;fillColor=#c1d5b0;strokeColor=#7C9070;fontSize=11;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="50" y="115" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p2" value="🔍 Развенчание мифов (30%)&#10;«диеты не работают»,&#10;«возраст не приговор»" style="rounded=1;html=1;fillColor=#f5e0b0;strokeColor=#D4A056;fontSize=11;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="290" y="115" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p3" value="✅ Простые практики (40%)&#10;лайфхаки: пауза в еде,&#10;дыхание, тарелка" style="rounded=1;html=1;fillColor=#f0e6d3;strokeColor=#7C9070;fontSize=11;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="530" y="115" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p4" value="💚 Истории и эмоции (20%)&#10;«было/стало»,&#10;забота о себе после 40" style="rounded=1;html=1;fillColor=#f0c4c4;strokeColor=#C4A090;fontSize=11;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="770" y="115" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p5" value="🧑‍🏫 Личность Мирона (10%)&#10;философия, ответы&#10;на вопросы" style="rounded=1;html=1;fillColor=#f0e6d3;strokeColor=#7C9070;fontSize=11;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="115" width="220" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- == PLATFORMS == -->
+        <mxCell id="plat_title" value="📡 9 ПЛОЩАДОК И ФОРМАТЫ" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=15;fontColor=#D4A056;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="50" y="210" width="400" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Row 1: Flagship platforms -->
+        <mxCell id="flagship_title" value="🥇 ФЛАГМАНСКИЕ (основной контент)" style="text;html=1;strokeColor=none;fillColor=#7C9070;align=left;fontSize=13;fontColor=#FFFFFF;rounded=1;overflow=fill;resizable=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="245" width="1520" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="yt_plat" value="▶️ YouTube / VK Видео&#10;🎥 Ролики 5-10 мин&#10;📝 Описание → ссылка на тест&#10;🔍 SEO-заголовки" style="rounded=1;html=1;fillColor=#e8ede4;strokeColor=#7C9070;fontSize=11;fontColor=#3A352F;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="60" y="280" width="280" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="tg_plat" value="✈️ Telegram-канал&#10;📝 4-5 постов/нед&#10;🔗 Закреп: ссылка на бот&#10;📊 Прогрев + анонсы" style="rounded=1;html=1;fillColor=#e8ede4;strokeColor=#7C9070;fontSize=11;fontColor=#3A352F;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="370" y="280" width="280" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="dz_plat" value="📰 Дзен (Яндекс) 🏆&#10;📝 Лонгриды-статьи&#10;🏆 Идеально для ЦА 35-60!&#10;📎 В каждой → ссылка на тест" style="rounded=1;html=1;fillColor=#e8ede4;strokeColor=#7C9070;fontSize=11;fontColor=#3A352F;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="680" y="280" width="280" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="site_plat" value="🌐 Сайт-блог (Tilda/SEO)&#10;🔍 Статьи под поиск&#10;📊 Аналитика Метрики&#10;♾ Бесплатный трафик годами" style="rounded=1;html=1;fillColor=#e8ede4;strokeColor=#7C9070;fontSize=11;fontColor=#3A352F;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="990" y="280" width="280" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Row 2: Repost network -->
+        <mxCell id="repost_title" value="🥈 РЕПОСТ-СЕТЬ (дублируем контент)" style="text;html=1;strokeColor=none;fillColor=#D4A056;align=left;fontSize=13;fontColor=#FFFFFF;rounded=1;overflow=fill;" vertex="1" parent="1">
+          <mxGeometry x="50" y="380" width="1520" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="vk_plat" value="💙 VK-группа&#10;📝 Посты из TG + видео&#10;👩 ЦА 35-60 живёт здесь&#10;📎 Везде → ссылка на бот" style="rounded=1;html=1;fillColor=#f5eddc;strokeColor=#D4A056;fontSize=11;fontColor=#3A352F;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="60" y="412" width="235" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ok_plat" value="👥 Одноклассники 🏆&#10;❤️ Эмоциональные посты&#10;👵 Недооценённая ЦА 45-60+&#10;📎 Золотая жила!" style="rounded=1;html=1;fillColor=#f5eddc;strokeColor=#D4A056;fontSize=11;fontColor=#3A352F;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="320" y="412" width="235" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="inst_plat" value="📸 Instagram&#10;🎬 Reels из нарезок&#10;🖼 Карусели-памятки&#10;📎 Ссылка в шапке" style="rounded=1;html=1;fillColor=#f5eddc;strokeColor=#D4A056;fontSize=11;fontColor=#3A352F;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="580" y="412" width="235" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Row 3: Additional -->
+        <mxCell id="add_title" value="🥉 ДОПОЛНИТЕЛЬНЫЕ (точки захвата)" style="text;html=1;strokeColor=none;fillColor=#C4A090;align=left;fontSize=13;fontColor=#FFFFFF;rounded=1;overflow=fill;" vertex="1" parent="1">
+          <mxGeometry x="50" y="515" width="1520" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rt_plat" value="🎬 Rutube&#10;🎥 Дубль видео&#10;📈 Растущая площадка" style="rounded=1;html=1;fillColor=#f0e4d8;strokeColor=#C4A090;fontSize=11;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="60" y="550" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tt_plat" value="🎵 TikTok&#10;🎬 Shorts&#10;📱 Вертикальные" style="rounded=1;html=1;fillColor=#f0e4d8;strokeColor=#C4A090;fontSize=11;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="250" y="550" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pin_plat" value="📌 Pinterest&#10;🖼 Инфографика&#10;♾ Вечнозелёный" style="rounded=1;html=1;fillColor=#f0e4d8;strokeColor=#C4A090;fontSize=11;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="440" y="550" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="email_plat" value="📧 Email-рассылка&#10;📬 Дублирование&#10;💵 Дешёвый контакт" style="rounded=1;html=1;fillColor=#f0e4d8;strokeColor=#C4A090;fontSize=11;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="630" y="550" width="170" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- == CONTENT FLOW == -->
+        <mxCell id="flow_title" value="🔄 СИСТЕМА ПЕРЕУПАКОВКИ (1 контент = 9 форматов)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=15;fontColor=#7C9070;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="50" y="650" width="600" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="source" value="📹 Снял 1 видео&#10;(10-15 мин)" style="rounded=1;html=1;fillColor=#c1d5b0;strokeColor=#7C9070;fontSize=12;fontColor=#3A352F;align=center;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="690" width="140" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ar_f1" value="" style="edgeStyle=elbowEdgeStyle;html=1;strokeColor=#7C9070;endArrow=classic;endFill=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="710" as="geometry">
+            <mxPoint x="190" y="710" as="sourcePoint" />
+            <mxPoint x="230" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="f1" value="1️⃣ YouTube&#10;(оригинал)" style="rounded=1;html=1;fillColor=#e8ede4;strokeColor=#7C9070;fontSize=11;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="240" y="670" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f2" value="2️⃣ VK Видео&#10;(дубль)" style="rounded=1;html=1;fillColor=#e8ede4;strokeColor=#7C9070;fontSize=11;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="380" y="670" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f3" value="3️⃣ Rutube&#10;(дубль)" style="rounded=1;html=1;fillColor=#e8ede4;strokeColor=#7C9070;fontSize=11;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="520" y="670" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f4" value="4️⃣ Shorts/Reels&#10;(нарезки)" style="rounded=1;html=1;fillColor=#f5e0b0;strokeColor=#D4A056;fontSize=11;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="240" y="720" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f5" value="5️⃣ TikTok&#10;(нарезки)" style="rounded=1;html=1;fillColor=#f5e0b0;strokeColor=#D4A056;fontSize=11;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="380" y="720" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f6" value="6️⃣ Instagram&#10;(нарезки)" style="rounded=1;html=1;fillColor=#f5e0b0;strokeColor=#D4A056;fontSize=11;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="520" y="720" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f7" value="7️⃣ Дзен-статья&#10;(расписать)" style="rounded=1;html=1;fillColor=#c1d5b0;strokeColor=#7C9070;fontSize=11;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="240" y="770" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f8" value="8️⃣ SEO-блог&#10;(расписать)" style="rounded=1;html=1;fillColor=#c1d5b0;strokeColor=#7C9070;fontSize=11;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="380" y="770" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f9" value="9️⃣ Посты TG/VK&#10;(переписать)" style="rounded=1;html=1;fillColor=#f0e6d3;strokeColor=#7C9070;fontSize=11;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="520" y="770" width="120" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Arrows from source to formats -->
+        <mxCell id="as1" value="" style="edgeStyle=elbowEdgeStyle;html=1;strokeColor=#7C9070;endArrow=none;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="690" as="geometry">
+            <mxPoint x="190" y="690" as="sourcePoint" />
+            <mxPoint x="240" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="as2" value="" style="edgeStyle=elbowEdgeStyle;html=1;strokeColor=#D4A056;endArrow=none;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="700" as="geometry">
+            <mxPoint x="190" y="700" as="sourcePoint" />
+            <mxPoint x="240" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="as3" value="" style="edgeStyle=elbowEdgeStyle;html=1;strokeColor=#7C9070;endArrow=none;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="715" as="geometry">
+            <mxPoint x="190" y="715" as="sourcePoint" />
+            <mxPoint x="240" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- == WEEKLY CONTENT PLAN == -->
+        <mxCell id="plan_title" value="📅 Контент-план на неделю" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=15;fontColor=#D4A056;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="700" y="650" width="600" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="mon" value="ПН&#10;🎥 1 длинное видео&#10;+ Shorts" style="rounded=1;html=1;fillColor=#7C9070;strokeColor=#7C9070;fontSize=10;fontColor=#FFFFFF;align=center;" vertex="1" parent="1">
+          <mxGeometry x="700" y="685" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tue" value="ВТ&#10;📝 Пост-лайфхак&#10;→ TG → VK → OK" style="rounded=1;html=1;fillColor=#D4A056;strokeColor=#D4A056;fontSize=10;fontColor=#FFFFFF;align=center;" vertex="1" parent="1">
+          <mxGeometry x="840" y="685" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wed" value="СР&#10;📰 Статья в Дзен&#10;+ SEO-блог" style="rounded=1;html=1;fillColor=#7C9070;strokeColor=#7C9070;fontSize=10;fontColor=#FFFFFF;align=center;" vertex="1" parent="1">
+          <mxGeometry x="980" y="685" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="thu" value="ЧТ&#10;🔍 Пост-миф&#10;+ Reels" style="rounded=1;html=1;fillColor=#D4A056;strokeColor=#D4A056;fontSize=10;fontColor=#FFFFFF;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="685" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fri" value="ПТ&#10;💚 История/эмоция&#10;OK + VK + TG" style="rounded=1;html=1;fillColor=#C4A090;strokeColor=#C4A090;fontSize=10;fontColor=#FFFFFF;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="685" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sat" value="СБ&#10;🧑‍🏫 Мысль Мирона&#10;+ ответы" style="rounded=1;html=1;fillColor=#C4A090;strokeColor=#C4A090;fontSize=10;fontColor=#FFFFFF;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="685" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sun" value="ВС&#10;🌿 Лёгкий контент&#10;+ анонс" style="rounded=1;html=1;fillColor=#C4A090;strokeColor=#C4A090;fontSize=10;fontColor=#FFFFFF;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1540" y="685" width="100" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Bottom: CTA rule -->
+        <mxCell id="cta_rule" value="🔗 ГЛАВНОЕ ПРАВИЛО: КАЖДЫЙ ПОСТ → ССЫЛКА НА БОТ С ТЕСТОМ" style="rounded=1;html=1;fillColor=#7C9070;strokeColor=#7C9070;fontSize=14;fontColor=#FFFFFF;align=center;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="790" width="1000" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- SEO keywords -->
+        <mxCell id="seo_label" value="🔍 SEO-КЛАСТЕРЫ (для статей)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=14;fontColor=#7C9070;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="50" y="860" width="400" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="kw1" value="как вернуть энергию после 40" style="rounded=1;html=1;fillColor=#f0e6d3;strokeColor=#7C9070;fontSize=11;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="50" y="895" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kw2" value="как замедлить старение" style="rounded=1;html=1;fillColor=#f0e6d3;strokeColor=#7C9070;fontSize=11;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="300" y="895" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kw3" value="аутофагия простыми словами" style="rounded=1;html=1;fillColor=#f5e0b0;strokeColor=#D4A056;fontSize=11;fontColor=#3A352F;align=center;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="895" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kw4" value="интервальное питание для женщин" style="rounded=1;html=1;fillColor=#f0e6d3;strokeColor=#7C9070;fontSize=11;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="800" y="895" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kw5" value="почему постоянная усталость" style="rounded=1;html=1;fillColor=#f0e6d3;strokeColor=#7C9070;fontSize=11;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="895" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kw6" value="как улучшить сон после 50" style="rounded=1;html=1;fillColor=#f0e6d3;strokeColor=#7C9070;fontSize=11;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="895" width="230" height="30" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
