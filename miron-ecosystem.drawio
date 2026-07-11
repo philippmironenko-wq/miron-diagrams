@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-07-11T14:20:00.000Z" agent="Mozilla/5.0" version="24.7.5" etag="miron-eco">
+  <diagram id="miron-eco" name="Экосистема Мирон">
+    <mxGraphModel dx="1200" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Title -->
+        <mxCell id="title" value="🚀 Проект Мирон — полная экосистема" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=24;fontFamily=Playfair Display;fontColor=#3A352F;" vertex="1" parent="1">
+          <mxGeometry x="400" y="20" width="800" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" value="Аутофагия · Здоровье · Омоложение · Автоматизация" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=13;fontColor=#6B6558;" vertex="1" parent="1">
+          <mxGeometry x="500" y="60" width="600" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- === SECTION: TRAFFIC === -->
+        <mxCell id="traffic_label" value="📡 КАНАЛЫ ТРАФИКА" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=15;fontColor=#7C9070;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="50" y="100" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="traffic_border" value="" style="rounded=0;html=1;dashed=1;strokeColor=#7C9070;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="30" y="90" width="1540" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- Traffic sources -->
+        <mxCell id="dz" value="📰 Дзен" style="rounded=1;html=1;fillColor=#f0e6d3;strokeColor=#7C9070;fontSize=13;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="50" y="130" width="110" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="vk" value="💙 VK" style="rounded=1;html=1;fillColor=#f0e6d3;strokeColor=#7C9070;fontSize=13;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="175" y="130" width="110" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="yt" value="▶️ YouTube" style="rounded=1;html=1;fillColor=#f0e6d3;strokeColor=#7C9070;fontSize=13;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="300" y="130" width="110" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="tg" value="✈️ Telegram" style="rounded=1;html=1;fillColor=#f0e6d3;strokeColor=#7C9070;fontSize=13;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="425" y="130" width="110" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="rt" value="🎬 Rutube" style="rounded=1;html=1;fillColor=#f0e6d3;strokeColor=#7C9070;fontSize=13;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="550" y="130" width="110" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="pin" value="📌 Pinterest" style="rounded=1;html=1;fillColor=#f0e6d3;strokeColor=#7C9070;fontSize=13;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="675" y="130" width="110" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="inst" value="📸 Instagram" style="rounded=1;html=1;fillColor=#f0e6d3;strokeColor=#7C9070;fontSize=13;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="800" y="130" width="110" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="tt" value="🎵 TikTok" style="rounded=1;html=1;fillColor=#f0e6d3;strokeColor=#7C9070;fontSize=13;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="925" y="130" width="110" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="ok" value="👥 ОК" style="rounded=1;html=1;fillColor=#f0e6d3;strokeColor=#7C9070;fontSize=13;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="130" width="110" height="32" as="geometry" />
+        </mxCell>
+
+        <!-- SEO note -->
+        <mxCell id="seo" value="🌐 SEO-блог — бесплатный поисковый трафик (аутофагия, энергия после 40, омоложение)" style="text;html=1;strokeColor=none;fillColor=#F5EDDC;align=center;fontSize=12;fontColor=#3A352F;rounded=1;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="50" y="170" width="1110" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow from traffic to funnel -->
+        <mxCell id="arr_down" value="" style="edgeStyle=elbowEdgeStyle;html=1;strokeColor=#7C9070;endArrow=classic;endFill=1;exitX=0.5;exitY=0;" vertex="1" parent="1">
+          <mxGeometry x="630" y="200" as="geometry">
+            <mxPoint x="630" y="205" as="sourcePoint" />
+            <mxPoint x="630" y="245" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- === SECTION: FUNNEL === -->
+        <mxCell id="funnel_label" value="💰 ВОРОНКА ПРОДАЖ" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=15;fontColor=#D4A056;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="50" y="240" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="funnel_border" value="" style="rounded=0;html=1;dashed=1;strokeColor=#D4A056;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="30" y="230" width="1540" height="380" as="geometry" />
+        </mxCell>
+
+        <!-- Entry -->
+        <mxCell id="entry" value="🎯 Лендинг / Бот → Тест «В каком режиме живёт ваше тело?»" style="rounded=1;html=1;fillColor=#c1d5b0;strokeColor=#7C9070;fontSize=14;fontColor=#3A352F;align=center;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="260" width="740" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow -->
+        <mxCell id="a_entry" value="" style="edgeStyle=elbowEdgeStyle;html=1;strokeColor=#7C9070;endArrow=classic;endFill=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="300" as="geometry">
+            <mxPoint x="800" y="300" as="sourcePoint" />
+            <mxPoint x="800" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 3 Results -->
+        <mxCell id="ra" value="🔴 Режим «Выживание»&#10;0-18 баллов" style="rounded=1;html=1;fillColor=#f0c4c4;strokeColor=#C4A090;fontSize=13;fontColor=#8B5E50;align=center;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="340" width="220" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="rb" value="🟡 Режим «Качели»&#10;19-33 балла" style="rounded=1;html=1;fillColor=#f5e0b0;strokeColor=#D4A056;fontSize=13;fontColor=#8B6E30;align=center;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="340" width="220" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="rc" value="🟢 Режим «Обновление»&#10;34-60 баллов" style="rounded=1;html=1;fillColor=#c1d5b0;strokeColor=#7C9070;fontSize=13;fontColor=#4A5E40;align=center;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="340" width="220" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Merge arrows -->
+        <mxCell id="a_r1" value="" style="edgeStyle=elbowEdgeStyle;html=1;strokeColor=#7C9070;endArrow=none;" vertex="1" parent="1">
+          <mxGeometry x="210" y="390" as="geometry">
+            <mxPoint x="210" y="390" as="sourcePoint" />
+            <mxPoint x="510" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a_r2" value="" style="edgeStyle=elbowEdgeStyle;html=1;strokeColor=#7C9070;endArrow=none;" vertex="1" parent="1">
+          <mxGeometry x="510" y="390" as="geometry">
+            <mxPoint x="510" y="390" as="sourcePoint" />
+            <mxPoint x="510" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a_r3" value="" style="edgeStyle=elbowEdgeStyle;html=1;strokeColor=#7C9070;endArrow=none;" vertex="1" parent="1">
+          <mxGeometry x="810" y="390" as="geometry">
+            <mxPoint x="810" y="390" as="sourcePoint" />
+            <mxPoint x="510" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 7 Days -->
+        <mxCell id="days" value="🌱 Бесплатно: «Код молодости: 7 дней пробуждения»  (drip-выдача · текст + аудио + PDF)" style="rounded=1;html=1;fillColor=#FAF6F0;strokeColor=#7C9070;fontSize=14;fontColor=#3A352F;align=center;fontStyle=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="430" width="1040" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Bridge -->
+        <mxCell id="bridge" value="🔑 Продающий мост → спец-условие на флагман" style="rounded=1;html=1;fillColor=#f5e0b0;strokeColor=#D4A056;fontSize=14;fontColor=#8B6E30;align=center;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="500" width="900" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- Split -->
+        <mxCell id="a_buy" value="" style="edgeStyle=elbowEdgeStyle;html=1;strokeColor=#7C9070;endArrow=classic;endFill=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="535" as="geometry">
+            <mxPoint x="800" y="535" as="sourcePoint" />
+            <mxPoint x="380" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a_nobuy" value="" style="edgeStyle=elbowEdgeStyle;html=1;strokeColor=#D4A056;endArrow=classic;endFill=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="535" as="geometry">
+            <mxPoint x="800" y="535" as="sourcePoint" />
+            <mxPoint x="1220" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Buy/Not buy -->
+        <mxCell id="buy" value="💳 Купил(а) флагман&#10;3 900 / 7 900 / 19 900 ₽" style="rounded=1;html=1;fillColor=#c1d5b0;strokeColor=#7C9070;fontSize=13;fontColor=#3A352F;align=center;" vertex="1" parent="1">
+          <mxGeometry x="120" y="575" width="520" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nobuy" value="⏳ Не купил(а) → Прогрев 4 касания за 7 дней&#10;→ спящая база" style="rounded=1;html=1;fillColor=#f0c4c4;strokeColor=#C4A090;fontSize=13;fontColor=#8B5E50;align=center;" vertex="1" parent="1">
+          <mxGeometry x="960" y="575" width="520" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- === SECTION: TOOLS === -->
+        <mxCell id="tools_label" value="🔧 ИНСТРУМЕНТЫ И ИНФРАСТРУКТУРА" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=15;fontColor=#7C9070;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="50" y="640" width="400" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tools_border" value="" style="rounded=0;html=1;dashed=1;strokeColor=#7C9070;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="30" y="630" width="1540" height="200" as="geometry" />
+        </mxCell>
+
+        <!-- SYNTX -->
+        <mxCell id="syntx" value="🤖 SYNTX AI (ELITE)&#10;🖼 Изображения·📝 Текст&#10;🎬 Видео (Veo 3.1)·🎵 Аудио&#10;✅ Безлимит до 13.07.2026" style="rounded=1;html=1;fillColor=#f0e6d3;strokeColor=#7C9070;fontSize=12;fontColor=#3A352F;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="670" width="280" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- Salebot -->
+        <mxCell id="salebot" value="🤖 Salebot 🏆 ЯДРО ВОРОНКИ&#10;✅ Тест-квиз·✅ Drip-выдача&#10;✅ Оплаты·✅ Прогрев&#10;✅ Система тегов·✅ Аналитика" style="rounded=1;html=1;fillColor=#c1d5b0;strokeColor=#7C9070;fontSize=12;fontColor=#3A352F;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="360" y="670" width="280" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- Robokassa -->
+        <mxCell id="robokassa" value="💳 Робокасса&#10;💰 Приём платежей&#10;📋 Автофискализация&#10;🧾 Чеки → ФНС самозанятого" style="rounded=1;html=1;fillColor=#f5e0b0;strokeColor=#D4A056;fontSize=12;fontColor=#3A352F;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="670" y="670" width="280" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- Tilda -->
+        <mxCell id="tilda" value="🏗 Tilda / Vercel&#10;📄 Лендинг (10 блоков)&#10;🎨 Дизайн-система&#10;📱 Mobile-first + SEO-блог" style="rounded=1;html=1;fillColor=#f0e6d3;strokeColor=#7C9070;fontSize=12;fontColor=#3A352F;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="980" y="670" width="280" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- ElevenLabs -->
+        <mxCell id="eleven" value="🎙 ElevenLabs&#10;🗣 Голос Мирона&#10;🎧 Озвучка уроков&#10;🎼 Suno (фоновая музыка)" style="rounded=1;html=1;fillColor=#f0e6d3;strokeColor=#7C9070;fontSize=12;fontColor=#3A352F;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="670" width="260" height="140" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
