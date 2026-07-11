@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-07-11T14:30:00.000Z" agent="Mozilla/5.0" version="24.7.5" etag="miron-start">
+  <diagram id="miron-start" name="План запуска — шаг за шагом">
+    <mxGraphModel dx="1200" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="🚀 ПЛАН ЗАПУСКА МИРОН — ШАГ ЗА ШАГОМ" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=22;fontFamily=Playfair Display;fontColor=#3A352F;" vertex="1" parent="1">
+          <mxGeometry x="200" y="20" width="1000" height="36" as="geometry" />
+        </mxCell>
+
+        <!-- ============ STEP 1 ============ -->
+        <mxCell id="s1_number" value="1" style="ellipse;html=1;fillColor=#7C9070;strokeColor=#7C9070;fontSize=20;fontColor=#FFFFFF;align=center;" vertex="1" parent="1">
+          <mxGeometry x="50" y="90" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="s1_title" value="Приоритет 1. ТЕХНИЧЕСКАЯ БАЗА" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=16;fontColor=#7C9070;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="95" width="400" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="s1_desc" value="✅ Открыть самозанятость (приложение «Мой налог», 5 мин)
+✅ Создать бота в @BotFather → получить TOKEN
+✅ Зарегистрироваться в Salebot → вставить TOKEN бота
+✅ Подключить Робокассу (автофискализация для самозанятых)
+✅ Создать аккаунт на Tilda / приготовить Vercel для лендинга" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=12;fontColor=#3A352F;spacingLeft=5;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="120" y="125" width="600" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- ============ STEP 2 ============ -->
+        <mxCell id="s2_number" value="2" style="ellipse;html=1;fillColor=#7C9070;strokeColor=#7C9070;fontSize=20;fontColor=#FFFFFF;align=center;" vertex="1" parent="1">
+          <mxGeometry x="50" y="200" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="s2_title" value="Приоритет 2. АВАТАР И КОНТЕНТ" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=16;fontColor=#7C9070;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="205" width="400" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="s2_desc" value="✅ Сгенерировать портрет Мирона в SYNTX Image (1 главный портрет)
+✅ Создать голос Мирона в ElevenLabs + озвучить Вводное слово и День 1
+✅ Сгенерировать фоновую музыку (Suno — спокойный эмбиент)
+✅ Сделать 1-2 видео-заставки (Veo 3.1 — вводное слово + фон для уроков)
+✅ Сверстать PDF-комплект: Дневник пробуждения, Чек-лист, Памятка (Canva)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=12;fontColor=#3A352F;spacingLeft=5;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="120" y="235" width="600" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- ============ STEP 3 ============ -->
+        <mxCell id="s3_number" value="3" style="ellipse;html=1;fillColor=#D4A056;strokeColor=#D4A056;fontSize=20;fontColor=#FFFFFF;align=center;" vertex="1" parent="1">
+          <mxGeometry x="50" y="310" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_title" value="Приоритет 3. СБОРКА БОТА В SALEBOT (ядро воронки)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=16;fontColor=#D4A056;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="315" width="500" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_desc" value="✅ Блок 1: Старт — приветствие Мирона + кнопка «Пройти тест»
+✅ Блоки 2-8: Тест 7 вопросов (счётчики {score_A/B/C})
+✅ Блок 9: Запрос согласия на ПД (непредзаполненная галочка)
+✅ Блок 10-12: Ветвление A/B/C → 3 результата с текстами отчётов
+✅ Блок 13: Вводное слово + PDF-комплект → кнопка «Я готов!»
+✅ Блоки 14-20: Drip-выдача уроков (День 1-7, таймеры +24ч)
+✅ Блок 21: Кнопка ✅ на каждом уроке → тег день_N_открыт
+✅ Блок 22: Напоминания через 36ч (1 раз, без спама)
+✅ Блок 23: Продающий мост после Дня 7 → «Хочу в программу» / «Пока останусь»
+✅ Блок 24-25: Оплата через Робокассу (490₽) + автовыдача
+✅ Блок 26: Прогрев-цепочка 4 касания (для некупивших)
+✅ Теги: прошёл_тест, режим_A/B/C, начал_программу, день_N_открыт, дошёл_до_7, видел_оффер, в_прогреве, оплатил_флагман, холодный" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=12;fontColor=#3A352F;spacingLeft=5;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="120" y="345" width="700" height="210" as="geometry" />
+        </mxCell>
+
+        <!-- ============ STEP 4 ============ -->
+        <mxCell id="s4_number" value="4" style="ellipse;html=1;fillColor=#D4A056;strokeColor=#D4A056;fontSize=20;fontColor=#FFFFFF;align=center;" vertex="1" parent="1">
+          <mxGeometry x="50" y="540" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="s4_title" value="Приоритет 4. ЛЕНДИНГ НА TILDA / ВАЙБКОДИНГ" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=16;fontColor=#D4A056;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="545" width="500" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="s4_desc" value="✅ БЛОК 1 — Hero: слоган + портрет Мирона + кнопка «Пройти тест бесплатно →» (ссылка на бота)
+✅ БЛОК 2 — Боль: «Узнаёте себя?» — 5 карточек с болями ЦА
+✅ БЛОК 3 — Решение: аутофагия + Нобелевка 2016
+✅ БЛОК 4 — Легенда Мирона (полный текст + фото-аватар)
+✅ БЛОК 5 — 6 ключей к обновлению (иконки-карточки)
+✅ БЛОК 6 — Тест: кнопка «Пройти тест →»
+✅ БЛОК 7 — Трипваер: «Код молодости: 7 дней» за 490₽
+✅ БЛОК 8 — Отзывы (заглушки на старте)
+✅ БЛОК 9 — FAQ + дисклеймеры
+✅ БЛОК 10 — Подвал: юр.документы, политика, оферта
+✅ Техника: mobile-first, WebP, липкий CTA на мобильных, Яндекс.Метрика, SEO-теги" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=12;fontColor=#3A352F;spacingLeft=5;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="120" y="575" width="700" height="180" as="geometry" />
+        </mxCell>
+
+        <!-- ============ STEP 5 ============ -->
+        <mxCell id="s5_number" value="5" style="ellipse;html=1;fillColor=#C4A090;strokeColor=#C4A090;fontSize=20;fontColor=#FFFFFF;align=center;" vertex="1" parent="1">
+          <mxGeometry x="50" y="740" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="s5_title" value="Приоритет 5. ЗАПУСК ТРАФИКА (органика)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=16;fontColor=#C4A090;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="745" width="500" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="s5_desc" value="✅ Дзен: 2-3 статьи (просвещение + мифы + ссылка на тест)
+✅ Telegram-канал: 4-5 постов/нед (+ закреп ссылки на бот)
+✅ YouTube: 1-2 видео (про аутофагию, энергию после 40)
+✅ VK группа: посты из Telegram + видео
+✅ Одноклассники: эмоциональные посты (недооценённая ЦА 45-60+)
+✅ Shorts/Reels: нарезки из видео
+✅ Pinterest: инфографика (вечнозелёный трафик)
+✅ Rutube: дубль видео
+✅ SEO-блог: 3 статьи по ключам (аутофагия, энергия после 40, сон)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=12;fontColor=#3A352F;spacingLeft=5;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="120" y="775" width="600" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- ============ STEP 6 ============ -->
+        <mxCell id="s6_number" value="6" style="ellipse;html=1;fillColor=#C4A090;strokeColor=#C4A090;fontSize=20;fontColor=#FFFFFF;align=center;" vertex="1" parent="1">
+          <mxGeometry x="50" y="900" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="s6_title" value="Приоритет 6. ТЕСТ + ОПТИМИЗАЦИЯ" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=16;fontColor=#C4A090;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="905" width="500" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="s6_desc" value="✅ Пройти всю воронку самому как пользователь (найти баги)
+✅ Тестовый платёж через Робокассу (проверить чек в ФНС)
+✅ Проверить drip-выдачу уроков (все 7 дней)
+✅ Проверить прогревы и теги
+✅ Посмотреть метрики Salebot: где отвал?
+✅ Оптимизировать слабые места (тексты, CTA, тайминги)
+✅ Подключить Яндекс.Метрику на лендинг + цели" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=12;fontColor=#3A352F;spacingLeft=5;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="120" y="935" width="600" height="110" as="geometry" />
+        </mxCell>
+
+        <!-- ============ STEP 7 ============ -->
+        <mxCell id="s7_number" value="7" style="ellipse;html=1;fillColor=#7C9070;strokeColor=#7C9070;fontSize=20;fontColor=#FFFFFF;align=center;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1030" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="s7_title" value="Приоритет 7. МАСШТАБИРОВАНИЕ" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=16;fontColor=#7C9070;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="1035" width="500" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="s7_desc" value="✅ Запустить платную рекламу(VK Ads / Яндекс.Директ) — бюджет 10-30 тыс ₽
+✅ Настроить вебхуки Робокассы → анализировать продажи
+✅ Собирать отзывы от первых клиентов → на лендинг и в прогревы
+✅ Добавить тарифы флагмана: «Сам» (3900₽) / «Вместе» (7900₽) / «Лично» (19900₽)
+✅ Запустить подписку «Хранилище молодости» (990₽/мес)
+✅ A/B-тестирование заголовков и офферов
+✅ Расширять SEO-блог новыми статьями
+✅ Анализировать: где лучший выхлоп → туда и ресурсы" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=12;fontColor=#3A352F;spacingLeft=5;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="120" y="1065" width="600" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- Right panel: Quick checklist -->
+        <mxCell id="checklist_title" value="📋 ЧЕК-ЛИСТ БЫСТРОГО СТАРТА" style="text;html=1;strokeColor=none;fillColor=#7C9070;align=center;fontSize=14;fontColor=#FFFFFF;rounded=1;overflow=fill;" vertex="1" parent="1">
+          <mxGeometry x="900" y="90" width="600" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cl1" value="☐ Самозанятость (Мой налог) — 5 мин" style="text;html=1;strokeColor=none;fillColor=#FAF6F0;align=left;fontSize=12;fontColor=#3A352F;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="910" y="130" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="cl2" value="☐ Бот @BotFather → TOKEN" style="text;html=1;strokeColor=none;fillColor=#FAF6F0;align=left;fontSize=12;fontColor=#3A352F;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="910" y="155" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="cl3" value="☐ Salebot → проект + TOKEN" style="text;html=1;strokeColor=none;fillColor=#FAF6F0;align=left;fontSize=12;fontColor=#3A352F;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="910" y="180" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="cl4" value="☐ Робокасса (авточеки)" style="text;html=1;strokeColor=none;fillColor=#FAF6F0;align=left;fontSize=12;fontColor=#3A352F;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="910" y="205" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="cl5" value="☐ Портрет Мирона (SYNTX Image)" style="text;html=1;strokeColor=none;fillColor=#FAF6F0;align=left;fontSize=12;fontColor=#3A352F;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="910" y="230" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="cl6" value="☐ Голос Мирона (ElevenLabs)" style="text;html=1;strokeColor=none;fillColor=#FAF6F0;align=left;fontSize=12;fontColor=#3A352F;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="910" y="255" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="cl7" value="☐ PDF-комплект (Canva)" style="text;html=1;strokeColor=none;fillColor=#FAF6F0;align=left;fontSize=12;fontColor=#3A352F;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="910" y="280" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="cl8" value="☐ Тест 7 вопросов в Salebot" style="text;html=1;strokeColor=none;fillColor=#FAF6F0;align=left;fontSize=12;fontColor=#3A352F;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="910" y="305" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="cl9" value="☐ 7 уроков (drip-выдача)" style="text;html=1;strokeColor=none;fillColor=#FAF6F0;align=left;fontSize=12;fontColor=#3A352F;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="910" y="330" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="cl10" value="☐ Прогрев-цепочка (4 касания)" style="text;html=1;strokeColor=none;fillColor=#FAF6F0;align=left;fontSize=12;fontColor=#3A352F;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="910" y="355" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="cl11" value="☐ Лендинг на Tilda" style="text;html=1;strokeColor=none;fillColor=#FAF6F0;align=left;fontSize=12;fontColor=#3A352F;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="910" y="380" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="cl12" value="☐ Яндекс.Метрика + цели" style="text;html=1;strokeColor=none;fillColor=#FAF6F0;align=left;fontSize=12;fontColor=#3A352F;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="910" y="405" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="cl13" value="☐ Статья на Дзен + SEO" style="text;html=1;strokeColor=none;fillColor=#FAF6F0;align=left;fontSize=12;fontColor=#3A352F;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="910" y="430" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="cl14" value="☐ Тестовый прогон воронки" style="text;html=1;strokeColor=none;fillColor=#FAF6F0;align=left;fontSize=12;fontColor=#3A352F;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="910" y="455" width="300" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- KPI Box -->
+        <mxCell id="kpi_label" value="🎯 ЦЕЛЬ ПЕРВОГО МЕСЯЦА" style="text;html=1;strokeColor=none;fillColor=#D4A056;align=center;fontSize=14;fontColor=#FFFFFF;rounded=1;overflow=fill;" vertex="1" parent="1">
+          <mxGeometry x="900" y="510" width="600" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kpi_text" value="1000 человек прошли тест → 80 купили трипваер → 16 купили курс → ~50 000+ ₽" style="rounded=1;html=1;fillColor=#f5eddc;strokeColor=#D4A056;fontSize=14;fontColor=#8B6E30;align=center;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="550" width="600" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- CTA -->
+        <mxCell id="cta" value="💬 Какой шаг делаем прямо сейчас? Напиши номер!" style="rounded=1;html=1;fillColor=#7C9070;strokeColor=#7C9070;fontSize=18;fontColor=#FFFFFF;align=center;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1200" width="1000" height="60" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
